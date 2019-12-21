@@ -1,2 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 /.idea/
+/architecture1web/target/
+/cartmgr/target/
+/common/target/
+/customermgr/target/
+/goodsmgr/target/
+/goodsmgrweb/target/
+/ordermgr/target/
+storemgr/target

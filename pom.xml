@@ -17,14 +17,6 @@
     <module>cartmgr</module>
     <module>ordermgr</module>
     <module>storemgr</module>
-    <module>architecture1web</module>
-    <module>cartmgr</module>
-    <module>common</module>
-    <module>customermgr</module>
-      <module>goodsmgr</module>
-    <module>goodsmgrweb</module>
-    <module>ordermgr</module>
-    <module>storemgr</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -228,12 +220,12 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>${json.version}</version>
+      <version>2.3.0</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>${json.version}</version>
+      <version>2.3.0</version>
     </dependency>
 
     <dependency>
