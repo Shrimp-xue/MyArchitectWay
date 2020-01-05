@@ -5,4 +5,11 @@
         <typeAlias type="com.shrimp.customer.vo.CustomerModel" alias="customerModel"/>
         <typeAlias type="com.shrimp.customer.vo.CustomerQueryModel" alias="customerQueryModel"/>
     </typeAliases>
+
+    <plugins>
+        <plugin interceptor="com.shrimp.pageUtil.PagePlugin">
+            <property name="dialect" value="mysql"/>
+            <property name="pageSqlId" value=".*Page.*"/>
+        </plugin>
+    </plugins>
 </configuration>

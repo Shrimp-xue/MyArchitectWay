@@ -5,10 +5,10 @@ import lombok.Data;
 import java.util.Objects;
 
 /**
- * @description:
+ * @description: 用户实体类
  * @author: shrimp
  * @date: Created in 2019-12-21 14:10
- * @version: 用户实体类
+ * @version: 1.0
  * @modified By:
  */
 @Data

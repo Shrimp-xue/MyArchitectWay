@@ -27,7 +27,7 @@
         select * from tbl_customer where uuid=#{uuid}
     </select>
 
-    <select id="getByCondition" parameterType="customerQueryModel" resultType="customerModel">
+    <select id="getByConditionPage" parameterType="customerQueryModel" resultType="customerModel">
         select * from tbl_customer
         <where>
             <if test="uuid != null &amp;&amp; uuid > 0">
