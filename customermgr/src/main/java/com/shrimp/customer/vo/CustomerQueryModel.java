@@ -13,6 +13,4 @@ import lombok.Data;
 @Data
 public class CustomerQueryModel extends CustomerModel {
 
-    private Page<CustomerModel> page = new Page<CustomerModel>();
-
 }

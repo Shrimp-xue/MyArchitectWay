@@ -1,8 +1,7 @@
 package com.shrimp.customer.vo;
 
+import com.shrimp.common.vo.BaseModel;
 import lombok.Data;
-
-import java.util.Objects;
 
 /**
  * @description: 用户实体类
@@ -12,25 +11,11 @@ import java.util.Objects;
  * @modified By:
  */
 @Data
-public class CustomerModel {
-    private Integer uuid;
+public class CustomerModel extends BaseModel {
     private String customerId;
     private String pwd;
     private String showName;
     private String trueName;
     private String registerTime;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        CustomerModel that = (CustomerModel) o;
-        return Objects.equals(uuid, that.uuid);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(uuid);
-    }
 
 }
