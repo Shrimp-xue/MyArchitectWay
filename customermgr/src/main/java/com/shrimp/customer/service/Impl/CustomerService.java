@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @version: 1.0
  */
 @Service
-@Transactional
+@Transactional(rollbackFor = Exception.class)
 public class CustomerService extends BaseService<CustomerModel, CustomerQueryModel> implements ICustomerService {
 
     private CustomerDAO customerDAO = null;
