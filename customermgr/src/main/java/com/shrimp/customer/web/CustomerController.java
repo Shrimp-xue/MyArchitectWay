@@ -3,9 +3,9 @@ package com.shrimp.customer.web;
 import com.shrimp.customer.service.ICustomerService;
 import com.shrimp.customer.vo.CustomerModel;
 import com.shrimp.customer.vo.CustomerQueryModel;
-import com.shrimp.pageUtil.Page;
-import com.shrimp.util.format.DateFormatHelper;
-import com.shrimp.util.json.JsonHelper;
+import com.shrimp.pageutil.Page;
+import com.shrimp.util.DateUtil;
+import com.shrimp.util.JacksonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -45,7 +45,7 @@ public class CustomerController {
      **/
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String add(@ModelAttribute("customerModel") CustomerModel customerModel) {
-        customerModel.setRegisterTime(DateFormatHelper.long2str(System.currentTimeMillis()));
+        customerModel.setRegisterTime(DateUtil.long2str(System.currentTimeMillis()));
         iCustomerService.create(customerModel);
         return "customer/success";
     }
@@ -117,7 +117,8 @@ public class CustomerController {
         if (customerWebModel.getQueryJsonStr() == null || customerWebModel.getQueryJsonStr().trim().length() == 0) {
             cqm = new CustomerQueryModel();
         } else {
-            cqm = (CustomerQueryModel) JsonHelper.str2Object(customerWebModel.getQueryJsonStr(), CustomerQueryModel.class);
+            cqm = (CustomerQueryModel) JacksonUtil.str2Object(customerWebModel.getQueryJsonStr(),
+                    CustomerQueryModel.class);
         }
 
         cqm.getPage().setNowPage(customerWebModel.getNowPage());

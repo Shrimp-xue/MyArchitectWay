@@ -1,4 +1,4 @@
-package com.shrimp.pageUtil;
+package com.shrimp.pageutil;
 
 import java.lang.reflect.Field;
 

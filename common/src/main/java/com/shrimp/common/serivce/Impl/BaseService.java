@@ -3,7 +3,7 @@ package com.shrimp.common.serivce.Impl;
 import com.shrimp.common.dao.BaseDao;
 import com.shrimp.common.serivce.IBaseService;
 import com.shrimp.common.vo.BaseModel;
-import com.shrimp.pageUtil.Page;
+import com.shrimp.pageutil.Page;
 
 import java.util.List;
 

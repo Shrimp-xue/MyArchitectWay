@@ -7,7 +7,7 @@
     </typeAliases>
 
     <plugins>
-        <plugin interceptor="com.shrimp.pageUtil.PagePlugin">
+        <plugin interceptor="com.shrimp.pageutil.PagePlugin">
             <property name="dialect" value="mysql"/>
             <property name="pageSqlId" value=".*Page.*"/>
         </plugin>

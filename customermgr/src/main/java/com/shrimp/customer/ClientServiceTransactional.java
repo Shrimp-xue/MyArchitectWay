@@ -3,7 +3,7 @@ package com.shrimp.customer;
 import com.shrimp.customer.service.ICustomerService;
 import com.shrimp.customer.vo.CustomerModel;
 import com.shrimp.customer.vo.CustomerQueryModel;
-import com.shrimp.pageUtil.Page;
+import com.shrimp.pageutil.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

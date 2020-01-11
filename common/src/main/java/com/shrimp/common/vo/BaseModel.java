@@ -1,6 +1,6 @@
 package com.shrimp.common.vo;
 
-import com.shrimp.pageUtil.Page;
+import com.shrimp.pageutil.Page;
 import lombok.Data;
 
 import java.util.Objects;

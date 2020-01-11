@@ -1,16 +1,13 @@
 package com.shrimp.customer;
 
-import com.shrimp.customer.dao.CustomerDAO;
 import com.shrimp.customer.service.ICustomerService;
 import com.shrimp.customer.vo.CustomerModel;
 import com.shrimp.customer.vo.CustomerQueryModel;
-import com.shrimp.pageUtil.Page;
+import com.shrimp.pageutil.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 /**
  * @description: 测试service 层调用数据库

@@ -1,7 +1,7 @@
 package com.shrimp.common.serivce;
 
 import com.shrimp.common.vo.BaseModel;
-import com.shrimp.pageUtil.Page;
+import com.shrimp.pageutil.Page;
 
 /**
  * @description:

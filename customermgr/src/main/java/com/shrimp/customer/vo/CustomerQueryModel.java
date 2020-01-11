@@ -1,6 +1,5 @@
 package com.shrimp.customer.vo;
 
-import com.shrimp.pageUtil.Page;
 import lombok.Data;
 
 /**
