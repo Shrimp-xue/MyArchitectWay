@@ -1,0 +1,18 @@
+package $#modulePackge#.service;
+
+
+import com.shrimp.common.serivce.IBaseService;
+
+import $#modulePackge#.vo.$#moduleNameSuperCase#Model;
+import $#modulePackge#.vo.$#moduleNameSuperCase#QueryModel;
+
+/**
+ * @description:
+ * @author: shrimp
+ * @date: Created in
+ * @version: 1.0
+ */
+public interface I$#moduleNameSuperCase#Service extends IBaseService<$#moduleNameSuperCase#Model,$#moduleNameSuperCase#QueryModel>{
+	
+}
+

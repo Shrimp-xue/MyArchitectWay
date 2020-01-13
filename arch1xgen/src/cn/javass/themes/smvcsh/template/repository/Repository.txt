@@ -1,0 +1,9 @@
+package $#modulePackge#.repository;
+
+import com.shrimp.es.common.entity.search.Searchable;
+import com.shrimp.es.common.repository.BaseRepository;
+import $#modulePackge#.entity.$#moduleNameSuperCase#;
+
+public interface $#moduleNameSuperCase#Repository extends BaseRepository<$#moduleNameSuperCase#,$#keyDataType#>{
+
+}

@@ -1,0 +1,16 @@
+package $#modulePackge#.vo;
+
+import lombok.Data;
+
+/**
+ * @description:
+ * @author: shrimp
+ * @date: Created in
+ * @version: 1.0
+ * @modified By:
+ */
+@Data
+public class $#moduleNameSuperCase#QueryModel extends $#moduleNameSuperCase#Model {
+	$[cn.javass.themes.smvcsm.visitors.QueryModelProperty]
+
+}

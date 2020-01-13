@@ -1,4 +1,4 @@
-package com.shrimp.customer.service.Impl;
+package com.shrimp.customer.service.impl;
 
 import com.shrimp.common.serivce.Impl.BaseService;
 import com.shrimp.customer.dao.CustomerDAO;

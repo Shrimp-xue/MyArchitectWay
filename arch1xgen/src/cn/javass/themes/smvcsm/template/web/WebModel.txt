@@ -1,0 +1,15 @@
+package $#modulePackge#.web;
+
+import com.shrimp.common.web.BaseWebModel;
+import lombok.Data;
+
+/**
+ * @description:
+ * @author: shrimp
+ * @date: Created in
+ * @version: 1.0
+ */
+@Data
+public class $#moduleNameSuperCase#WebModel extends BaseWebModel{
+	
+}
