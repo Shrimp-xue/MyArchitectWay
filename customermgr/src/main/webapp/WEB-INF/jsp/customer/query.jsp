@@ -18,7 +18,8 @@
                 ',"showName":"' + $("#showName").val() + '"' +
                 ',"trueName":"' + $("#trueName").val() + '"' +
                 '}';
-            window.location.href = "${pageContext.request.contextPath}/customer/toList?queryJsonStr=" + json;
+            window.location.href = "${pageContext.request.contextPath}/customer/toList?queryJsonStr=" +
+                encodeURIComponent(json);
         });
     });
 </script>
