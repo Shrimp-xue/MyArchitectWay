@@ -30,7 +30,6 @@
             <if test="name!=null &amp;&amp; name!=''">
                 and name like #{name}
             </if>
-
         </where>
     </select>
 

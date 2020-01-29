@@ -35,14 +35,14 @@
             <value>root</value>
         </property>
         <property name="password">
-            <value>root</value>
+            <value>xueqiang</value>
         </property>
     </bean>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="classpath:MybatisConf.xml"/>
-        <property name="mapperLocations" value="classpath:com/shrimp/**/*Mapper.xml"/>
+        <property name="mapperLocations" value="classpath*:com/shrimp/**/*Mapper.xml"/>
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
